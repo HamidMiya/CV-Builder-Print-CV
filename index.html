@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Builder</h1>
+        <form id="resumeForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="fatherName">Father's Name:</label>
+                <input type="text" id="fatherName" name="fatherName" required>
+            </div>
+            <div class="form-group">
+                <label for="qualifications">Qualifications:</label>
+                <input type="text" id="qualifications" name="qualifications" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            <div class="form-group">
+                <label for="experiences">Experiences:</label>
+                <input type="text" id="experiences" name="experiences" required>
+            </div>
+            <div class="form-group">
+                <label for="languages">Languages:</label>
+                <input type="text" id="languages" name="languages" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        
+        <!-- Resume Output Section -->
+        <div id="resumeOutput" class="resume-output" style="display: none;">
+            <h2>Resume</h2>
+            <p><strong>Name:</strong> <span id="outputName"></span></p>
+            <p><strong>Father's Name:</strong> <span id="outputFatherName"></span></p>
+            <p><strong>Qualifications:</strong> <span id="outputQualifications"></span></p>
+            <p><strong>Phone:</strong> <span id="outputPhone"></span></p>
+            <p><strong>Address:</strong> <span id="outputAddress"></span></p>
+            <p><strong>Experiences:</strong> <span id="outputExperiences"></span></p>
+            <p><strong>Languages:</strong> <span id="outputLanguages"></span></p>
+            <button onclick="printResume()">Print</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
